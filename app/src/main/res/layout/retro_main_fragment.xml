@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/earth_640"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37">
+
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/na"
+                android:id="@+id/iv_icon"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/ib_float"
+                    android:elevation="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/oval"
+                    android:src="@drawable/ic_search_black_24dp"
+
+
+                    />
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:typeface="sans"
+                android:text="Temperature"
+                android:textSize="26pt"
+                android:textStyle="bold"
+                android:textColor="#eeff41"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_temp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Condition"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="#ff9800"
+                android:id="@+id/tv_desc"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="City"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff3e0"
+                android:id="@+id/tv_city"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="186dp"
+                  android:orientation="vertical" android:layout_weight="0.29" >
+
+        <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:textColor="#141CFF"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_graph_shape"
+            android:drawableLeft="@drawable/bargraph"
+            android:id="@+id/bt_graph"/>
+</LinearLayout>

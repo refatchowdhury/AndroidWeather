@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FF00A5">
+
+    <Button
+            android:layout_width="346dp"
+            android:layout_height="137dp"
+            android:text="Volley"
+            android:layout_margin="15dp"
+            android:id="@+id/bt_volley"
+            android:layout_gravity="center_vertical"
+            android:background="#ffcffffc"/>
+    <Button
+            android:layout_width="346dp"
+            android:layout_height="137dp"
+            android:text="RetroFit"
+            android:layout_margin="15dp"
+            android:id="@+id/bt_retrofit"
+            android:background="#ffffd6ea"
+            />
+    <Button
+            android:layout_width="346dp"
+            android:layout_height="137dp"
+            android:text="AsyncTask"
+            android:layout_margin="15dp"
+            android:id="@+id/bt_asynctask"
+            android:ellipsize="end"
+            android:background="#ff88ff8e"/>
+</LinearLayout>
